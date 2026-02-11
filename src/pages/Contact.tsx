@@ -16,7 +16,7 @@ const contactLinks = [
     notification: 'Email copied to clipboard! 📧',
   },
   {
-    href: 'https://www.linkedin.com/in/hamza-mouhib-861776252/',
+    href: 'https://www.linkedin.com/in/hamza-mouhib/',
     icon: 'ph-linkedin-logo',
     title: 'linkedin',
     description: 'view my profile',
