@@ -29,7 +29,7 @@ export default function About() {
       >
         <p className="text-text-strong font-mono font-normal text-sm sm:text-base capitalize leading-5 sm:leading-6">
           A driven student at 1337BG (42 Network), passionate about Cybersecurity 
-          and exploring DevOps. With a solid base in scripting and systems, I enjoy 
+          and exploring DevOps & Web Backend Development. With a solid base in scripting and systems, I enjoy 
           uncovering how things work under the hood and securing them, while embracing 
           42's peer-learning philosophy.
         </p>
