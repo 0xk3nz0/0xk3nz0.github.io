@@ -18,7 +18,7 @@ export default function Layout({ children }: LayoutProps) {
         <header className="sect-head flex justify-between items-center">
           <Link to="/">
             <div className="flex items-center gap-1 m-2 sm:m-5 cursor-pointer">
-              <p className="text-text-strong font-mono text-sm sm:text-base uppercase">LH4J</p>
+              <p className="text-text-strong font-mono text-sm sm:text-base uppercase">Kenzō</p>
               <span className="text-text-weak font-mono text-sm sm:text-base uppercase">_</span>
             </div>
           </Link>
@@ -36,7 +36,7 @@ export default function Layout({ children }: LayoutProps) {
         <footer className="sect-foot flex justify-end w-full">
           <div className="flex items-center gap-1 m-2 sm:m-5">
             <a href="https://discord.com/users/lh4j/" target="_blank" rel="noopener noreferrer">
-              <span className="text-text-weak font-mono text-xs sm:text-base uppercase hover:text-accent transition-colors duration-300">@LH4J</span>
+              <span className="text-text-weak font-mono text-xs sm:text-base uppercase hover:text-accent transition-colors duration-300">@Kenzō</span>
             </a>
           </div>
         </footer>
