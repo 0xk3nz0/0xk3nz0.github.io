@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 export default function About() {
   useEffect(() => {
-    window.document.title = "KenFolio | About";
+    window.document.title = "About Me - Kenzō";
   }, [])
 
   return (

@@ -175,7 +175,7 @@ const skills = [
 
 export default function Skills() {
   useEffect(() => {
-    window.document.title = "KenFolio | Skills";
+    window.document.title = "Skills";
   }, [])
 
   return (

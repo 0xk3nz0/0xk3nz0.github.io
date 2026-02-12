@@ -10,7 +10,7 @@ export default function ProjectDetail() {
 
   useEffect(() => {
     if (project) {
-      window.document.title = `KenFolio | ${project.title}`;
+      window.document.title = `${project.title} - Kenzō's Projects`;
     }
   }, [project]);
 

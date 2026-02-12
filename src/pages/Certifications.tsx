@@ -60,7 +60,7 @@ const certifications = [
 
 export default function Certifications() {
   useEffect(() => {
-    window.document.title = "KenFolio | Certifications";
+    window.document.title = "Kenzō's Certifications";
   }, [])
 
   return (

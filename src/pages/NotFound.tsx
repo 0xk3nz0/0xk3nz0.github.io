@@ -6,7 +6,7 @@ export default function NotFound() {
   const { isDark } = useTheme();
 
   useEffect(() => {
-    window.document.title = "KenFolio | Page Not Found";
+    window.document.title = "Page Not Found";
   }, [])
 
   return (

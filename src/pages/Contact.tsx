@@ -34,7 +34,7 @@ export default function Contact() {
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    window.document.title = "KenFolio | Contact";
+    window.document.title = "Contact Me";
   }, [])
 
   const showNotification = (message: string) => {

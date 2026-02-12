@@ -5,7 +5,7 @@ import { projects } from "../data/ProjectsData";
 
 export default function Projects() {
   useEffect(() => {
-    window.document.title = "KenFolio | Projects";
+    window.document.title = "Kenzō's Projects";
   }, [])
 
   return (

@@ -43,7 +43,7 @@ const navigationItems = [
 
 export default function Home() {
   useEffect(() => {
-    window.document.title = "KenFolio | Home";
+    window.document.title = "Home";
   }, [])
 
   return (
