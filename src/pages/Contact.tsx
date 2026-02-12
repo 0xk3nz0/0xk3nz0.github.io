@@ -22,7 +22,7 @@ const contactLinks = [
     description: 'view my profile',
   },
   {
-    href: 'https://github.com/itsLhaj',
+    href: 'https://github.com/0xk3nz0',
     icon: 'ph-github-logo',
     title: 'github',
     description: 'browse my code',
