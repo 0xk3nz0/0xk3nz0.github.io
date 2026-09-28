@@ -1,15 +1,1026 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/chipi.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <title>Kenzō</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جمعية شباب ادوطالب وادبيگفاين للتنمية | الموقع الرسمي</title>
+    <meta name="description"
+        content="جمعية شباب ادوطالب وادبيگفاين للتنمية - إطار جمعوي شبابي يهدف إلى تنمية الدوار وتحسين ظروف عيش الساكنة من خلال العمل التطوعي والتضامني">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/logo.png" alt="شعار الجمعية" class="nav-logo-img">
+                <span class="nav-logo-text">جمعية شباب ادوطالب ادبيگفاين</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#domains">مجالات العمل</a></li>
+                <li><a href="#vision">رؤيتنا</a></li>
+                <li><a href="#gallery">معرض الأنشطة</a></li>
+                <li><a href="#faq">الأسئلة الشائعة</a></li>
+                <li><a href="#contact" class="nav-cta-btn">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="hero-glow-circle"></div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">✨</span>
+                <span>إطار شبابي قانوني ومؤسساتي لخدمة الصالح العام</span>
+            </div>
+            <div class="hero-logo-wrapper">
+                <div class="hero-logo-glow"></div>
+                <img src="assets/logo.png" alt="شعار جمعية شباب ادوطالب وادبيگفاين للتنمية" class="hero-logo">
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">جمعية شباب ادوطالب</span>
+                <span class="hero-title-line accent">وادبيگفاين للتنمية</span>
+            </h1>
+            <p class="hero-subtitle">توحيد الطاقات والكفاءات الشبابية والمساهمة الفعالة في التنمية الشاملة وتحسين ظروف
+                عيش الساكنة المحلية</p>
+
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary btn-glow">
+                    <span>تعرف على الجمعية</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+                <a href="#domains" class="btn btn-outline">
+                    <span>محاور وبرامج العمل</span>
+                </a>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-target="6">6</span>
+                        <span class="stat-label">محاور عمل رئيسية</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-target="30">30+</span>
+                        <span class="stat-label">هدفاً تنموياً وميدانياً</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">عمل تطوعي وتضامني</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">خدمة المصلحة العامة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <span>اكتشف المزيد</span>
+            <div class="scroll-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="7 13 12 18 17 13" />
+                    <polyline points="7 6 12 11 17 6" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="section-bg-decoration">
+            <div class="deco-circle deco-1"></div>
+            <div class="deco-circle deco-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">من نحن</span>
+                <h2 class="section-title">تعريف الجمعية الشبابية</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <span></span>
+                </div>
+                <p class="section-desc">إطار جمعوي مدني شبابي يضع في صلب اهتماماته تنمية الإنسان والمجال بدوار ادوطالب
+                    وادبيگفاين</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card about-card-main">
+                    <div class="about-card-badge">الرؤية التأسيسية</div>
+                    <div class="about-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1M5 21V5a2 2 0 012-2h10a2 2 0 012 2v16" />
+                        </svg>
+                    </div>
+                    <h3>إطار جمعوي قانوني ومؤسساتي</h3>
+                    <p>الجمعية الشبابية بالدوار هي إطار جمعوي قانوني ومؤسساتي غير ربحي، يضم أبناء وشباب الدوار، ويهدف
+                        إلى توحيد جهودهم وطاقاتهم وتوجيهها نحو العمل الجماعي والتطوعي وخدمة المصلحة العامة، وبناء نموذج
+                        تنموي تشاركي يرتقي بمستوى الخدمات والحياة اليومية.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>كفاءات وطاقات شبابية</h3>
+                    <p>تسعى الجمعية إلى الاستفادة من الكفاءات والطاقات الشبابية والمساهمة في معالجة بعض الحاجيات
+                        والخصاصات التي تعرفها المنطقة، إلى جانب تنشيط الحياة الاجتماعية والثقافية والرياضية والاقتصادية
+                        بالدوار.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>تضامن وتعاون مستمر</h3>
+                    <p>تعمل الجمعية على تعزيز روح التضامن والتعاون بين السكان، وتشجيع المبادرات المحلية، وتمثيل انشغالات
+                        الساكنة والترافع عن مطالبها المشروعة أمام الجهات المختصة والفاعلين العموميين.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3>حلقة وصل وشراكة فاعلة</h3>
+                    <p>تعتبر الجمعية حلقة وصل موثوقة بين ساكنة الدوار ومختلف الفاعلين المؤسساتيين والمدنيين، بهدف
+                        المساهمة في
+                        تحقيق تنمية محلية مستدامة وتحسين ظروف عيش السكان وتعزيز جودة البنية التحتية.</p>
+                </div>
+            </div>
+
+            <!-- Pillars Highlights -->
+            <div class="about-pillars">
+                <div class="pillar-tag">
+                    <span class="pillar-icon">✓</span>
+                    <span>العمل التطوعي المنظم</span>
+                </div>
+                <div class="pillar-tag">
+                    <span class="pillar-icon">✓</span>
+                    <span>الشفافية والحكامة الجيدة</span>
+                </div>
+                <div class="pillar-tag">
+                    <span class="pillar-icon">✓</span>
+                    <span>المقاربة التشاركية</span>
+                </div>
+                <div class="pillar-tag">
+                    <span class="pillar-icon">✓</span>
+                    <span>خدمة الصالح العام أولاً</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domains Section -->
+    <section class="section domains-section" id="domains">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">مجالات العمل</span>
+                <h2 class="section-title">أهداف ومحاور الجمعية</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <span></span>
+                </div>
+                <p class="section-desc">تتمثل أهم مجالات عمل الجمعية وأهدافها في 6 محاور استراتيجية أساسية</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="domain-filter">
+                <button class="filter-btn active" data-filter="all">جميع المحاور (6)</button>
+                <button class="filter-btn" data-filter="1">التنمية والبنية التحتية</button>
+                <button class="filter-btn" data-filter="2">العمل التضامني</button>
+                <button class="filter-btn" data-filter="3">التعليم والتمدرس</button>
+                <button class="filter-btn" data-filter="4">الثقافة والرياضة</button>
+                <button class="filter-btn" data-filter="5">التمكين الاقتصادي</button>
+                <button class="filter-btn" data-filter="6">التأطير والوساطة</button>
+            </div>
+
+            <div class="domains-grid">
+                <!-- Domain 1 -->
+                <div class="domain-card" data-domain="1">
+                    <div class="domain-card-inner">
+                        <div class="domain-header-top">
+                            <span class="domain-tag">البيئة والتهيئة</span>
+                            <div class="domain-number">01</div>
+                        </div>
+                        <div class="domain-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="domain-title">التنمية المحلية والبنية التحتية</h3>
+                        <ul class="domain-list">
+                            <li>المساهمة في نظافة الدوار وتجميل أزقته وفضاءاته العمومية</li>
+                            <li>تنظيم حملات للتشجير وحماية البيئة والمحافظة على الموارد الطبيعية</li>
+                            <li>الترافع من أجل إصلاح وتهيئة الطرق والمسالك القروية</li>
+                            <li>المطالبة بتحسين الإنارة العمومية وتوسيع الاستفادة منها</li>
+                            <li>الدفاع عن حق الساكنة في الماء الصالح للشرب وتدبيره</li>
+                        </ul>
+                        <div class="domain-card-decoration"></div>
+                    </div>
+                </div>
+
+                <!-- Domain 2 -->
+                <div class="domain-card" data-domain="2">
+                    <div class="domain-card-inner">
+                        <div class="domain-header-top">
+                            <span class="domain-tag">الرعاية المجتمعية</span>
+                            <div class="domain-number">02</div>
+                        </div>
+                        <div class="domain-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </div>
+                        <h3 class="domain-title">المجال الاجتماعي والتضامني</h3>
+                        <ul class="domain-list">
+                            <li>تقديم الدعم والمساعدات للأسر في وضعية هشاشة واحتياج</li>
+                            <li>تنظيم مبادرات وقوافل تضامنية في المناسبات والأعياد</li>
+                            <li>تنظيم حملات طبية وتحسيسية متعددة التخصصات للساكنة</li>
+                            <li>دعم الأسر والأطفال في وضعية اجتماعية صعبة</li>
+                            <li>ترسيخ قيم التكافل والتضامن الإنساني المتوارثة بالدوار</li>
+                        </ul>
+                        <div class="domain-card-decoration"></div>
+                    </div>
+                </div>
+
+                <!-- Domain 3 -->
+                <div class="domain-card" data-domain="3">
+                    <div class="domain-card-inner">
+                        <div class="domain-header-top">
+                            <span class="domain-tag">بناء الأجيال</span>
+                            <div class="domain-number">03</div>
+                        </div>
+                        <div class="domain-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="domain-title">التعليم ودعم التمدرس</h3>
+                        <ul class="domain-list">
+                            <li>تشجيع الأطفال والشباب على مواصلة الدراسة ومحاربة الهدر المدرسي</li>
+                            <li>دعم مبادرات النقل المدرسي لفائدة تلاميذ وتلميذات الدوار</li>
+                            <li>تنظيم حصص للدعم والتقوية خصوصاً في المواد الأساسية والامتحانات</li>
+                            <li>تنظيم أنشطة تربوية وتوعوية ومسابقات تحفيزية للناشئة</li>
+                            <li>تشجيع القراءة وتوفير الكتب والوسائط التعليمية الحديثة</li>
+                        </ul>
+                        <div class="domain-card-decoration"></div>
+                    </div>
+                </div>
+
+                <!-- Domain 4 -->
+                <div class="domain-card" data-domain="4">
+                    <div class="domain-card-inner">
+                        <div class="domain-header-top">
+                            <span class="domain-tag">طاقات وإبداع</span>
+                            <div class="domain-number">04</div>
+                        </div>
+                        <div class="domain-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path
+                                    d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="domain-title">الأنشطة الثقافية والرياضية</h3>
+                        <ul class="domain-list">
+                            <li>تنظيم دوريات وبطولات رياضية سنوية تشجع التنافس الشريف</li>
+                            <li>تنظيم فعاليات ومهرجانات ثقافية وفنية وترفيهية متنوعة</li>
+                            <li>إقامة أمسيات شعرية ومسرحية لإبراز وصقل المواهب المحلية</li>
+                            <li>صيانة والاعتزاز بالتراث والعادات والتقاليد الأمازيغية والمغربية</li>
+                            <li>إحداث فضاء للمطالعة والأنشطة الرقمية الهادفة</li>
+                        </ul>
+                        <div class="domain-card-decoration"></div>
+                    </div>
+                </div>
+
+                <!-- Domain 5 -->
+                <div class="domain-card" data-domain="5">
+                    <div class="domain-card-inner">
+                        <div class="domain-header-top">
+                            <span class="domain-tag">استقلالية وتطوير</span>
+                            <div class="domain-number">05</div>
+                        </div>
+                        <div class="domain-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="domain-title">التمكين الاقتصادي والتكوين</h3>
+                        <ul class="domain-list">
+                            <li>تنظيم دورات وورشات تكوينية وتأهيلية في مختلف المهن والمهارات</li>
+                            <li>تشجيع إنشاء المشاريع الصغرى والمقاولات الذاتية للشباب</li>
+                            <li>التعريف ببرامج الدعم والتمويل الحكومية والجهوية المتاحة</li>
+                            <li>تشجيع تأسيس التعاونيات الفلاحية والحرفية وتطوير أدائها</li>
+                            <li>تثمين وتسويق المنتجات المحلية ودعم سلاسل الإنتاج</li>
+                        </ul>
+                        <div class="domain-card-decoration"></div>
+                    </div>
+                </div>
+
+                <!-- Domain 6 -->
+                <div class="domain-card" data-domain="6">
+                    <div class="domain-card-inner">
+                        <div class="domain-header-top">
+                            <span class="domain-tag">مواطنة وترافع</span>
+                            <div class="domain-number">06</div>
+                        </div>
+                        <div class="domain-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="domain-title">التأطير والتواصل والوساطة</h3>
+                        <ul class="domain-list">
+                            <li>تعزيز قنوات التواصل والتعاون والتآزر بين كافة أطياف الساكنة</li>
+                            <li>نشر ثقافة الحوار البناء والعمل التشاركي والمواطنة الإيجابية</li>
+                            <li>تنظيم لقاءات دورية تشاورية لتبادل الآراء ورصد الأولويات</li>
+                            <li>إيصال مطالب وانشغالات السكان المشروعة إلى الدوائر المسؤولة</li>
+                            <li>بناء شراكات تنموية مثمرة مع المؤسسات الوطنية والمنتخبة</li>
+                        </ul>
+                        <div class="domain-card-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap / Methodology Section -->
+    <section class="section roadmap-section" id="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">منهجية العمل</span>
+                <h2 class="section-title">خارطة الطريق ومسار التنفيذ</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <span></span>
+                </div>
+                <p class="section-desc">خطوات علمية وتشاركية تتبعها الجمعية لتحويل الأفكار إلى مشاريع واقعية ومستدامة
+                </p>
+            </div>
+
+            <div class="roadmap-grid">
+                <div class="roadmap-step">
+                    <div class="step-badge">المرحلة 01</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <h3>التشخيص التشاركي</h3>
+                    <p>رصد الحاجيات الميدانية والخصاص بالدوار من خلال اللقاءات المباشرة مع الساكنة وتحديد الأولويات
+                        العاجلة.</p>
+                </div>
+
+                <div class="roadmap-step">
+                    <div class="step-badge">المرحلة 02</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3>صياغة البرامج والمشاريع</h3>
+                    <p>إعداد ملفات تقنية ودراسات واضحة للمشاريع وبحث سبل التمويل والشراكات مع الفاعلين المؤسساتيين.</p>
+                </div>
+
+                <div class="roadmap-step">
+                    <div class="step-badge">المرحلة 03</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>التنفيذ الميداني التضامني</h3>
+                    <p>تفعيل المبادرات على أرض الواقع بإشراك مباشر للشباب وسكان الدوار في جو من التطوع والتعاون.</p>
+                </div>
+
+                <div class="roadmap-step">
+                    <div class="step-badge">المرحلة 04</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>التقييم وضمان الاستدامة</h3>
+                    <p>قياس الأثر الإيجابي للمشاريع وضمان صيانتها واستمرار منافعها لصالح الأجيال الصاعدة بالدوار.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="section vision-section" id="vision">
+        <div class="vision-bg-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge light">رؤيتنا وقيمنا</span>
+                <h2 class="section-title light">الرؤية العامة والمبادئ الأساسية</h2>
+                <div class="section-divider light">
+                    <span></span>
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <span></span>
+                </div>
+            </div>
+            <div class="vision-content">
+                <div class="vision-card">
+                    <div class="vision-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>بناء إطار شبابي فعال ومسؤول</h3>
+                    <p>تطمح الجمعية الشبابية إلى بناء إطار شبابي فعال ومسؤول، يقوم على العمل التطوعي والتعاون والمشاركة
+                        المواطنة، ويساهم في جعل الدوار فضاءً أكثر تنظيماً وتضامناً وحيوية، مع العمل على تحسين الظروف
+                        الاجتماعية والاقتصادية والثقافية والبيئية للساكنة.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3>الشباب.. قاطرة التنمية المحلية</h3>
+                    <p>تسعى الجمعية إلى جعل الشباب قوة أساسية وفاعلة في التنمية المحلية، من خلال تمكينهم من المشاركة في
+                        اتخاذ
+                        المبادرات، وتطوير مهاراتهم وقدراتهم، واستثمار طاقاتهم الحية في مشاريع تعود بالنفع المباشر على
+                        الدوار وساكنته.</p>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div class="vision-values">
+                <div class="value-item">
+                    <div class="value-icon">🤝</div>
+                    <span>التضامن والتآخي</span>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🌱</div>
+                    <span>التنمية المستدامة</span>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">💪</div>
+                    <span>العمل التطوعي</span>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🎯</div>
+                    <span>المسؤولية والشفافية</span>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">💡</div>
+                    <span>المبادرة والابتكار</span>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🌍</div>
+                    <span>المصلحة العامة</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">معرض الأنشطة</span>
+                <h2 class="section-title">أنشطة ومبادرات الجمعية الميدانية</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <span></span>
+                </div>
+                <p class="section-desc">صور وتوثيق حي لمختلف الأنشطة التطوعية، التربوية، الرياضية والتضامنية لشباب
+                    الدوار</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery 1: Tree Planting & Clean-up (Large) -->
+                <div class="gallery-card gallery-card-large" data-img="assets/activity-environment.jpg"
+                    data-title="حملة التشجير والنظافة البيئية"
+                    data-desc="مبادرة تطوعية شبابية لتشجير المساحات وتنظيف الفضاءات العامة بالدوار">
+                    <img src="assets/activity-environment.jpg" alt="حملة تشجير ونظافة بالدوار" class="gallery-photo"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">البيئة والتنمية</span>
+                        <h4 class="gallery-photo-title">حملة التشجير والنظافة البيئية</h4>
+                        <p class="gallery-photo-desc">غرس الأشجار وتجميل المسالك العامة لحماية البيئة المحلية</p>
+                        <div class="gallery-zoom-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery 2: Sports Tournament -->
+                <div class="gallery-card" data-img="assets/activity-sports.jpg"
+                    data-title="الدوري الرياضي السنوي لكرة القدم"
+                    data-desc="أنشطة رياضية وتنافس شريف يجمع شباب وأطفال الدوار لتعزيز الروح الرياضية">
+                    <img src="assets/activity-sports.jpg" alt="دوري كرة القدم لشباب الدوار" class="gallery-photo"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">الرياضة والشباب</span>
+                        <h4 class="gallery-photo-title">الدوري الرياضي السنوي</h4>
+                        <p class="gallery-photo-desc">تشجيع الممارسة الرياضية وصقل طاقات الناشئة</p>
+                        <div class="gallery-zoom-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery 3: Education & Tutoring -->
+                <div class="gallery-card" data-img="assets/activity-education.jpg"
+                    data-title="دروس الدعم والتقوية ومحاربة الهدر المدرسي"
+                    data-desc="تأطير ومساعدة تلاميذ الدوار في واجباتهم المدرسية والاستعداد للامتحانات">
+                    <img src="assets/activity-education.jpg" alt="حصص الدعم التربوي للأطفال" class="gallery-photo"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">التربية والتعليم</span>
+                        <h4 class="gallery-photo-title">الدعم التربوي والمدرسي</h4>
+                        <p class="gallery-photo-desc">مرافقة الأطفال وتشجيعهم على التفوق الدراسي</p>
+                        <div class="gallery-zoom-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery 4: Solidarity Aid -->
+                <div class="gallery-card" data-img="assets/activity-solidarity.jpg"
+                    data-title="القوافل التضامنية والدعم الاجتماعي"
+                    data-desc="توزيع المساعدات والمواد الغذائية والأغطية على الأسر المحتاجة بالدوار">
+                    <img src="assets/activity-solidarity.jpg" alt="حملة تضامنية لتوزيع المساعدات" class="gallery-photo"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">العمل الإنساني</span>
+                        <h4 class="gallery-photo-title">القوافل التضامنية</h4>
+                        <p class="gallery-photo-desc">مساندة الأسر المعوزة وترسيخ التكافل الاجتماعي</p>
+                        <div class="gallery-zoom-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery 5: Youth Assembly & Consultation (Wide) -->
+                <div class="gallery-card gallery-card-wide" data-img="assets/activity-assembly.jpg"
+                    data-title="اللقاءات التشاورية والتخطيط التنموي"
+                    data-desc="اجتماعات دورية للشباب وأبناء الدوار للتداول في المشاريع ومناقشة الأولويات">
+                    <img src="assets/activity-assembly.jpg" alt="اجتماع تخطيطي لشباب الجمعية" class="gallery-photo"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">الحوار والتخطيط</span>
+                        <h4 class="gallery-photo-title">اللقاءات التشاورية والتخطيط</h4>
+                        <p class="gallery-photo-desc">صياغة البرامج التنموية بروح ديمقراطية وتشاركية مسؤولة</p>
+                        <div class="gallery-zoom-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="lightbox-img-wrapper">
+                <img src="" alt="معاينة الصورة" id="lightboxImg">
+            </div>
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">إجابات وتوضيحات</span>
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <span></span>
+                </div>
+                <p class="section-desc">كل ما تود معرفته حول أهداف الجمعية، شروط الانخراط، والمشاركة في الأنشطة</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        <span>من يحق له الانخراط والمشاركة في أنشطة الجمعية؟</span>
+                        <div class="faq-toggle-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>الجمعية مفتوحة لجميع أبناء وشباب دوار ادوطالب وادبيگفاين سواء المقيمين بالدوار أو خارجه، وكذا
+                            كل من يتقاسم معنا أهداف خدمة الصالح العام والمساهمة في تنمية المنطقة.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف يتم تمويل مشاريع وأنشطة الجمعية؟</span>
+                        <div class="faq-toggle-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>تعتمد الجمعية على واجبات انخراط الأعضاء، تبرعات ومساهمات أبناء الدوار والمحسنين، بالإضافة إلى
+                            الدعم المالي والتقني في إطار شراكات مع الجماعات الترابية، والمؤسسات العمومية، وبرامج
+                            المبادرة الوطنية للتنمية البشرية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف يمكنني اقتراح فكرة أو مشروع تنموي للدوار؟</span>
+                        <div class="faq-toggle-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يمكن لأي مواطن أو شاب تقديم مقترحاته عبر استمارة التواصل بالموقع، أو عبر مراسلتنا بالبريد
+                            الإلكتروني، أو من خلال حضور اللقاءات الدورية العامة التي تنظمها الجمعية مع الساكنة.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف تضمن الجمعية الشفافية في تسيير مواردها؟</span>
+                        <div class="faq-toggle-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>تلتزم الجمعية بمبادئ الحكامة الجيدة والشفافية التامة، من خلال مسك دفاتر محاسباتية دقيقة،
+                            وتقديم التقريرين الأدبي والمالي في الجموع العامة، ونشر حصيلة الأنشطة والمشاريع المنفذة
+                            دورياً.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join CTA Banner -->
+    <section class="join-banner">
+        <div class="container join-banner-container">
+            <div class="join-content">
+                <span class="join-tag">انضمام وتطوع</span>
+                <h2>يداً في يد.. لنصنع مستقبلاً أفضل لدوارنا</h2>
+                <p>طاقاتكم وخبراتكم هي المحرك الحقيقي لتنمية ادوطالب وادبيگفاين. انضموا إلى فريق المتطوعين أو شاركوا
+                    معنا بمقترحاتكم البناءة.</p>
+            </div>
+            <div class="join-actions">
+                <a href="#contact" class="btn btn-primary btn-glow">
+                    <span>تواصل معنا الآن</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">تواصل معنا</span>
+                <h2 class="section-title">اتصل بنا واطرح اقتراحاتك</h2>
+                <div class="section-divider">
+                    <span></span>
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <span></span>
+                </div>
+                <p class="section-desc">نحن رهن إشارتكم للإجابة عن استفساراتكم واستقبال أفكاركم ومبادراتكم التنموية</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-text">
+                            <h4>المقر / العنوان</h4>
+                            <p>دوار ادوطالب وادبيگفاين</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card" id="phoneCopyCard" style="cursor: pointer;" title="انقر للنسخ">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-text">
+                            <h4>الهاتف والواتساب</h4>
+                            <p dir="ltr">+212 6XX-XXXXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card" id="emailCopyCard" style="cursor: pointer;" title="انقر للنسخ">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-text">
+                            <h4>البريد الإلكتروني</h4>
+                            <p>contact@jam3ia-adoutaleb.ma</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social-wrap">
+                        <h4>تابعونا على شبكات التواصل</h4>
+                        <div class="contact-social">
+                            <a href="#" class="social-link" aria-label="فيسبوك">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/sunnnyr.io/" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="انستغرام">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="يوتيوب">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-title-box">
+                        <h3>أرسل رسالة مباشرة</h3>
+                        <p>سنقوم بالرد عليكم في أقرب وقت ممكن</p>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل *</label>
+                            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" placeholder="06XXXXXXXX">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني *</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">الموضوع / نوع المبادرة *</label>
+                        <input type="text" id="subject" name="subject"
+                            placeholder="مثال: طلب انخراط، اقتراح نشاط، استفسار..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">الرسالة أو تفاصيل الاقتراح *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك أو اقتراحك هنا..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>إرسال الرسالة</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,40 C360,100 720,0 1080,60 C1260,90 1380,40 1440,40 L1440,120 L0,120 Z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="assets/logo.png" alt="شعار الجمعية" class="footer-logo">
+                    <h3 class="footer-title">جمعية شباب ادوطالب وادبيگفاين للتنمية</h3>
+                    <p>إطار شبابي تطوعي ومؤسساتي يسعى إلى خدمة المصلحة العامة، وتنشيط الحياة الاجتماعية والرياضية
+                        والثقافية بالدوار والمساهمة في التنمية المستدامة.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#domains">مجالات العمل</a></li>
+                        <li><a href="#roadmap">خارطة العمل</a></li>
+                        <li><a href="#vision">رؤيتنا</a></li>
+                        <li><a href="#gallery">معرض الأنشطة</a></li>
+                        <li><a href="#faq">الأسئلة الشائعة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-domains">
+                    <h4>محاور العمل</h4>
+                    <ul>
+                        <li>التنمية المحلية والبنية التحتية</li>
+                        <li>المجال الاجتماعي والتضامني</li>
+                        <li>التعليم ودعم التمدرس</li>
+                        <li>الأنشطة الثقافية والرياضية</li>
+                        <li>التمكين الاقتصادي والتكوين</li>
+                        <li>التأطير والتواصل والوساطة</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 جمعية شباب ادوطالب وادبيگفاين للتنمية. جميع الحقوق محفوظة.</p>
+                <p class="footer-credit">Created by <a href="https://www.instagram.com/sunnnyr.io/" target="_blank"
+                        rel="noopener noreferrer">SuNNNyR ( Amine Bigfaine )</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotification">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message" id="toastMessage">تم النسخ بنجاح!</span>
+    </div>
+
+    <!-- Floating WhatsApp Action -->
+    <a href="https://wa.me/212600000000" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="تواصل معنا عبر واتساب" title="تواصل عبر واتساب">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.158.57 4.181 1.564 5.928l-1.636 5.972 6.137-1.611c1.701.927 3.65 1.461 5.935 1.461 6.627 0 12-5.373 12-12s-5.373-12-12-12z" />
+        </svg>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
